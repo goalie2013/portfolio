@@ -1,3 +1,7 @@
+$font-stack-title: 'Lora', serif;
+$primary-color: #fefefa;
+$image-width: 400px;
+
 /* Change default to Alternative Box Model */
 html {
   box-sizing: border-box;
@@ -9,16 +13,16 @@ html {
 }
 
 body {
-  background-color: #fefefa;
+  background-color: $primary-color;
 }
 
 h1 {
-  font-family: 'Lora', serif;
+  font-family: $font-stack-title;
   text-align: center;
 }
 
 img {
   display: block;
   margin: 0 auto;
-  width: 500px;
+  width: $image-width;
 }
