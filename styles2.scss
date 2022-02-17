@@ -2,16 +2,6 @@ $font-stack-title: 'Lora', serif;
 $primary-color: #fefefa;
 $image-width: 400px;
 
-/* Change default to Alternative Box Model */
-html {
-  box-sizing: border-box;
-}
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
 body {
   background-color: $primary-color;
 }
@@ -25,4 +15,8 @@ img {
   display: block;
   margin: 0 auto;
   width: $image-width;
+}
+
+.col {
+  border: 2px solid black;
 }

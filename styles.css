@@ -1,24 +1,89 @@
-/* Change default to Alternative Box Model */
-html {
-  box-sizing: border-box;
-}
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
+html,
+body {
+  height: 100%;
 }
 
 body {
-  background-color: #fefefa;
+  background-color: #fbf0e4;
 }
 
-h1 {
+.t {
+  border: 1px solid black;
+}
+
+h1,
+h4 {
   font-family: 'Lora', serif;
   text-align: center;
 }
 
-img {
+#profilePic {
   display: block;
   margin: 0 auto;
   width: 500px;
+  height: auto;
+  padding: 50px;
+}
+
+.try {
+  border: 2px solid black;
+}
+
+#x {
+  position: absolute;
+  background: red;
+  width: 20px;
+  height: 20px;
+  left: 50%;
+  top: 50%;
+}
+
+#cover {
+  background: url(./img/snowy_day.jpeg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  border: 2px solid black;
+  text-align: center;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+#cover-caption {
+  width: 100%;
+  border: 2px solid red;
+}
+
+.ch {
+  width: 100%;
+  height: 100vh;
+}
+.carouselImg {
+  /* height: 100%; */
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Small screens */
+@media all and (max-width: 800px) {
+  .carouselImg {
+    object-fit: cover;
+  }
+}
+
+.section-content {
+  padding: 5rem 0;
+}
+
+.lead {
+  margin-bottom: 1rem; /* 16px */
+}
+
+#footer-main {
+  padding: 3rem;
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-size: 0.8rem;
 }
